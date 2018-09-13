@@ -1,7 +1,2 @@
 # Sea-cruise
-echo "# Sea-cruise" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin git@github.com:VildanovDenis/Sea-cruise.git
-git push -u origin master
+ссылка на макет https://drive.google.com/file/d/1VAdO85t6767vW8q1symgUfrkPDYFOi_X/view
