@@ -32,13 +32,16 @@
       <div class="header__lang">
         <a class="header__user-header__lang-link" href="#">Ru</a>
       </div>
-      <div class="header__support">
-        <span class="header__support-number">8 800 500-61-05</span>
-        <span class="header__support-info">Круглосуточная поддержка</span>
+      <div class="header__support support">
+        <span class="header__support-number support-number">8 800 500-61-05</span>
+        <span class="header__support-info support-info">Круглосуточная поддержка</span>
       </div>
     </div>
     <div class="header__general-info">
-      <img class="header__logo logo" src="css/img/logo-mob.png" width="70" height="70" alt="Логотип морских прогулок">
+      <picture class="header__logo logo">
+        <source media="(min-width: 1170px)" srcset="css/img/logo.png">
+        <img src="css/img/logo-mob.png" alt="Логотип морских прогулок">
+      </picture>
       <h2 class="header__title title">Морские прогулки <br><span class="title--big">по чёрному морю</span></h2>
       <a class="header__btn-link button" href="#">Выбрать круиз</a>
     </div>
@@ -48,18 +51,107 @@
     <section class="catalog">
       <div class="catalog__header">
         <h2 class="catalog__title title">Каталог круизов</h2>
-        <span>Сортировать круизы по <a class="catalog__link" href="#">цене</a></span>
+        <span class="catalog__info">Сортировать круизы по <a class="catalog__link" href="#">цене</a></span>
       </div>
       <div class="catalog__cards">
-        <div class="catalog__card catalog__card--big">
-          <div class="catalog__landscape-image"></div>
-
+        <div class="column-left">
+          <div class="catalog__card catalog__card--big">
+            <picture>
+              <source media="(min-width: 1170px)" srcset="css/img/anapa-desk.jpg">
+              <source media="(min-width: 750px)" srcset="css/img/anapa-tab.jpg">
+              <img src="css/img/anapa-mob.jpg" alt="Пейзаж анапы">
+            </picture>
+            <div class="catalog__card-description">
+              <a class="catalog__card-link">Морской круиз в Анапу</a>
+              <div class="catalog__card-general-info"><span class="catalog__card-general-info--bold">Маршрут</span>:
+                Сочи-Лазаревское-Геленджик-Анапа</div>
+              <div class="catalog__card-general-info"><span class="catalog__card-general-info--bold">Продолжительность</span>:
+                10 ч. 0 мин.</div>
+              <span class="catalog__card-price">49 000 руб.</span>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <picture>
+              <source media="(min-width: 1170px)" srcset="css/img/anapa-desk.jpg">
+              <source media="(min-width: 750px)" srcset="css/img/anapa-tab.jpg">
+              <img src="css/img/anapa-mob.jpg" alt="Пейзаж анапы">
+            </picture>
+            <div class="catalog__card-description">
+              <a class="catalog__card-link">Морской круиз в Новороссийск</a>
+              <div class="catalog__card-general-info"><span class="catalog__card-general-info--bold">Маршрут</span>:
+                Сочи-Геленджик-
+                Новороссйиск-Геленджик-Сочи</div>
+              <div class="catalog__card-general-info"><span class="catalog__card-general-info--bold">Продолжительность</span>:
+                13 ч. 0 мин.</div>
+              <span class="catalog__card-price">14 800 руб.</span>
+            </div>
+          </div>
+        </div>
+        <div class="column-right">
+          <div class="catalog__card">
+            <picture>
+              <source media="(min-width: 1170px)" srcset="css/img/anapa-desk.jpg">
+              <source media="(min-width: 750px)" srcset="css/img/anapa-tab.jpg">
+              <img src="css/img/anapa-mob.jpg" alt="Пейзаж анапы">
+            </picture>
+            <div class="catalog__card-description">
+              <a class="catalog__card-link">Обзорная морская прогулка с экскурсией</a>
+              <div class="catalog__card-general-info"><span class="catalog__card-general-info--bold">Маршрут</span>:
+                Сочи-Адлер-Сочи (без высадки)</div>
+              <div class="catalog__card-general-info"><span class="catalog__card-general-info--bold">Продолжительность</span>:
+                1 ч. 0 мин.</div>
+              <span class="catalog__card-price">5 000 руб.</span>
+              <span class="catalog__card-price catalog__card-price--old">15 000 руб.</span>
+            </div>
+          </div>
+          <div class="catalog__card">
+              <picture>
+                <source media="(min-width: 1170px)" srcset="css/img/anapa-desk.jpg">
+                <source media="(min-width: 750px)" srcset="css/img/anapa-tab.jpg">
+                <img src="css/img/anapa-mob.jpg" alt="Пейзаж анапы">
+              </picture>
+              <div class="catalog__card-description">
+                <a class="catalog__card-link">Морская прогулка в Геленджик</a>
+                <div class="catalog__card-general-info"><span class="catalog__card-general-info--bold">Маршрут</span>:
+                  Сочи-Туапсе-Геленджик</div>
+                <div class="catalog__card-general-info"><span class="catalog__card-general-info--bold">Продолжительность</span>:
+                  12 ч. 30 мин.</div>
+                <span class="catalog__card-price">7 000 руб.</span>
+                <span class="catalog__card-price catalog__card-price--old">10 000 руб.</span>
+              </div>
+            </div>
         </div>
       </div>
+      <a class="catalog__btn-link button">Больше круизов</a>
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="footer__about-us">
+      <ul class="footer__about-us-list footer__list">
+        <li><a href="#" class="footer__about-us-list-link">Вход для партнёров</a></li>
+        <li><a href="#" class="footer__about-us-list-link">О компании</a></li>
+        <li><a href="#" class="footer__about-us-list-link">Контакты</a></li>
+      </ul>
+    </div>
+    <div class="footer__social">
+      <span class="footer__social-call">Будь на связи:</span>
+      <ul class="footer__social-list footer__list">
+        <li><a href="#" class="footer__social-link footer__social-link--vk"><span class="visually-hidden">Вконтакте</span></a></li>
+        <li><a href="#" class="footer__social-link footer__social-link--ok"><span class="visually-hidden">Одноклассники</span></a></li>
+        <li><a href="#" class="footer__social-link footer__social-link--yt"><span class="visually-hidden">Youtube</span></a></li>
+        <li><a href="#" class="footer__social-link footer__social-link--inst"><span class="visually-hidden">Instagram</span></a></li>
+      </ul>
+    </div>
+        <div class="footer__support support">
+        <span class="footer__support-number support-number">8 800 500-61-05</span>
+        <span class="footer__support-info support-info">Круглосуточная поддержка</span>
+        <span class="footer__support-ooo">© 2016 OOO «Городские Круизы»</span>
+        </div>
+  </footer>
 
 </body>
 
 
 </html>
+<!-- @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {} -->

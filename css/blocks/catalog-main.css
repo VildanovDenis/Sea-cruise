@@ -1,0 +1,71 @@
+.catalog {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 15px;
+
+  background-color: #f3f3f3;
+}
+.catalog__header {
+  width: 320px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+.catalog__title {
+  display: block;
+
+  font-family: "Roboto Slab";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 48px;
+}
+.catalog__info {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.catalog__link {
+  font-style: italic;
+}
+.catalog__cards {
+  width: 320px;
+  margin: 0 auto;
+}
+.catalog__card {
+  max-width: 290px;
+  min-height: 465px;
+  margin-bottom: 20px;
+  
+  background-color: white;
+}
+.catalog__card-description {
+  padding: 30px 23px 0;
+}
+.catalog__btn-link {
+  margin-bottom: 30px;
+}
+@media (min-width: 750px) {
+  .catalog__title {
+    font-size: 26px;
+    line-height: 48px;
+  }
+  .catalog__card {
+    width: 345px;
+    min-height: 508px;
+  }
+}
+@media (min-width: 1170px) {
+  .catalog__title {
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .catalog__card {
+    width: 555px;
+    min-height: 305px;
+  }
+  .catalog__card--big {
+    min-height: 630px;
+  }
+}

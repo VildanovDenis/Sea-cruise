@@ -71,7 +71,7 @@
   padding-left: 5px;
   margin: 0;
   margin-bottom: 38px;
-  margin-top: -3px;
+  margin-top: -11px;
 
   letter-spacing: 0.05em;
 }
@@ -215,11 +215,13 @@
     background-image: url(../img/arrow.svg);
     background-repeat: no-repeat;
   }
-  .header__support {
+  .support {
     display: flex;
     flex-wrap: wrap;
 
     width: 140px;
+  }
+  .header__support  {
     margin-left: 30px;
   }
   .header__support-number {
@@ -251,6 +253,11 @@
   .header {
     background-position: center 0;
     background-size: cover;
+  }
+  .header__wrapper-all-list,
+  .header__general-info {
+    max-width: 1140px;
+    margin: 0 auto;
   }
   .header__btn-link::after {
     position: absolute;
