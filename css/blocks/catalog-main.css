@@ -221,7 +221,7 @@
     min-height: 628px;
   }
   .catalog__card-description {
-    min-height: 100px;
+    min-height: 120px;
   }
   .column-right .catalog__card:last-child {
     display: block;
