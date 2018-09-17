@@ -1,5 +1,5 @@
 @import url("min-normalize.css");
-@import url("general-style.css");
-@import url("blocks/header-main.css");
-@import url("blocks/catalog-main.css");
-@import url("blocks/footer-main.css");
+@import url("min-general-style.css");
+@import url("blocks/min-header-main.css");
+@import url("blocks/min-catalog-main.css");
+@import url("blocks/min-footer-main.css");

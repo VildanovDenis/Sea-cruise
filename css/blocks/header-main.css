@@ -8,6 +8,8 @@
   background-repeat: no-repeat;
 }
 .header__wrapper-all-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-height: 64px;
 }
@@ -55,8 +57,13 @@
   display: none;
 }
 .header__general-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 
   margin: -38px 0 0;
 }
@@ -217,8 +224,11 @@
     background-repeat: no-repeat;
   }
   .support {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 
     width: 140px;
   }
